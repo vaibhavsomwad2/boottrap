@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.slides .carousel-inner, .slides .carousel-inner .carousel-item, .slides .carousel-inner .carousel-item img{
+height: 60vh;
+}
+
+.slides .carousel-inner .carousel-item img{
+    object-fit: cover;
+}
+
+.slides .carousel-item .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slides .carousel-caption h5{
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.slides .carousel-caption p{
+    font-size: 14px;
+}
+
+.gears .thumbnilicon i{
+    font-size: 60px;
+}
+
+.thumbnilicon h3{
+    font-size: 26px;
+    margin: 10px 0;
+}
+.ready, .video{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.ready {
+    background-image: url("../images/lights.jpg");
+    
+}
+.ready::before, .video::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.video{
+    background-image: url(../images/media.jpg);
+}
+.playBtn,.playBtn:visited{
+    color: #fff;
+    font-size: 48px;
+}
+.footer{
+    background-color: black;
+}
+
+.icons i{
+    font-size: 48px;
+}
+@media screen and (min-width:768px){
+    #testimonials .owl-theme .owl-nav {
+        margin-top: 10px;
+        position: absolute;
+        width: 100%;
+        top: -15px;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    #testimonials button.owl-prev {
+        left: -60px;
+        position: absolute;
+    }
+    #testimonials button.owl-next {
+        right: -60px;
+        position: absolute;
+    }
+    .fa-solid, .fas {
+        font-weight: 900;
+        font-size: 55px;
+        color: #fff;
+    }    
+}
